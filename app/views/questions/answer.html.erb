@@ -1,0 +1,10 @@
+<div class="question">
+    <span class="communication"><%= @question %></span>
+    <span class="signature">-You asked</span>
+</div>
+<div class="coach_answer">
+    <span class="communication"><strong><%= @answer %></strong></span>
+    <span class="signature"><em>-Your coach answered</em></span>
+</div>
+
+<%=link_to "Ask a new question", ask_path, class: "link_to_ask"%>
