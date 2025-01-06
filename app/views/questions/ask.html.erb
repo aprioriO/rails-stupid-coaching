@@ -1,8 +1,19 @@
-<div>
-  <h1>Stupid Coaching</h1>
-  <form action="/answer" data-turbo="false" method = "get">
-    <p>Hello, I am here to coach you. Tell me what is in your mind?:</p>
-    <input type="text" name="question">
-    <input type="submit" value="Ask!">
-  </form>
-</div>
+ <div class="container my-5 p-4 bg-white shadow rounded">
+    <h1 class="text-center text-primary mb-4">Stupid Coaching</h1>
+
+    <form action="/answer" data-turbo="false" method="get" class="p-3">
+      <p class="fs-5 text-info">Hello, I am here to coach you. Tell me what is in your mind?</p>
+
+      <div class="mb-3">
+        <input type="text" name="question" class="form-control border-info shadow-sm" placeholder="Enter your question">
+      </div>
+
+      <div class="text-center">
+        <input type="submit" value="Ask!" class="btn btn-info text-white fw-bold">
+      </div>
+    </form>
+  </div>
+
+<p class="text-muted mt-4 text-center">
+      You can tell something to the coach, ask something with a "?", say or ask "I am going to work", or scream in UPPERCASE.
+</p>

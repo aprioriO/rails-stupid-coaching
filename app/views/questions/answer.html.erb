@@ -1,12 +1,21 @@
-<div class = "container">
-  <h1>Stupid Coaching</h1>
-  <div class="card">
-      <span class="communication"><%= @question %></span>
-      <span class="signature">-You asked</span>
+<div class="container my-5 p-4 bg-white shadow rounded">
+    <h1 class="text-center text-primary mb-4">Stupid Coaching</h1>
+
+    <div class="card mb-3 border-info shadow-sm">
+      <div class="card-body">
+        <p class="card-text text-info fw-bold"><%= @question %></p>
+        <p class="card-text text-muted"><small>- You said to coach</small></p>
+      </div>
+    </div>
+
+    <div class="card mb-3 border-info shadow-sm">
+      <div class="card-body">
+        <p class="card-text text-info fw-bold"><strong><%= @answer %></strong></p>
+        <p class="card-text text-muted"><small><em>- Your coach answered</em></small></p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <%= link_to "Ask a new question", ask_path, class: "btn btn-info text-white fw-bold" %>
+    </div>
   </div>
-  <div class="card">
-      <span class="communication"><strong><%= @answer %></strong></span>
-      <span class="signature"><em>-Your coach answered</em></span>
-  </div>
-  <%=link_to "Ask a new question", ask_path, class: "link_to_ask btn btn-primary"%>
-</div>
